@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://cdn.tailwindcss.com">
+  </script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYLE - My Work</title>
+  <script src="https://cdn.tailwindcss.com">
+</script>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          nutaku: {
+            red: '#ff2a4f',
+            dark: '#1a1a2e',
+            purple: '#6a3093',
+                        }
+                    }
+                }
+            }
+        }
+ </script>
+</head>
+<body class="bg-nutaku-dark text-gray-100 min-h-screen">
+            <!-- Navbar -->
+<header class="fixed w-full top-0 left-0 z-50 bg-nutaku-dark/90 backdrop-blur-sm shadow-md shadow-nutaku-red/30">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
+    <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent"> KYLE
+</a>
+          <!-- Desktop Menu -->
+<div class="hidden md:flex space-x-8">
+    <a href="../index.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red"> Home
+</a>
+    <a href="../src/public/about.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red"> About
+</a>
+    <a href="work.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-nutaku-red after:transition-all text-nutaku-red"> Work
+</a>
+   <a href="../src/public/contact.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red"> Contact
+</a>
+</div>
+        <!-- Mobile Toggle Button -->
+<button id="nav-toggle" class="md:hidden text-2xl focus:outline-none">
+  <i class='bx bx-menu'></i>
+  </button>
+</nav>
+        <!-- Mobile Menu -->
+<div id="nav-menu" class="hidden md:hidden bg-nutaku-dark w-full absolute left-0 top-full shadow-lg">
+ <div class="flex flex-col space-y-2 p-4">
+   <a href="../index.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">Home</a>
+   <a href="../src/public/about.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">About</a>
+   <a href="work.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 text-nutaku-red">Work</a>
+   <a href="../src/public/contact.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">Contact</a>
+      </div>
+    </div>
+</header>
+          <!-- Main Content -->
+<main class="max-w-6xl mx-auto px-4 sm:px-8 pt-24 md:pt-32 pb-12">
+  <section>
+    <h1 class="text-3xl md:text-5xl font-bold mb-12 text-center"> My <span class="bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent">Projects</span>
+</h1>
+          <!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+   <div class="bg-nutaku-dark/50 rounded-xl overflow-hidden shadow-lg hover:shadow-nutaku-red/30 transition-all border border-nutaku-purple/20">
+   <div class="h-48 bg-nutaku-purple/10 flex items-center justify-center">
+     <i class='bx bx-code-alt text-6xl text-nutaku-red'></i>
+</div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold mb-2">Web Application</h3>
+  <p class="text-gray-300 mb-4">A responsive web application with modern UI/UX design principles.</p>
+  <div class="flex flex-wrap gap-2">
+    <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">React</span>
+   <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">Tailwind</span>
+   <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">Node.js</span>
+     </div>
+   </div>
+</div>
+                
+                <!-- Project 2 -->
+                <div class="bg-nutaku-dark/50 rounded-xl overflow-hidden shadow-lg hover:shadow-nutaku-red/30 transition-all border border-nutaku-purple/20">
+                    <div class="h-48 bg-nutaku-purple/10 flex items-center justify-center">
+                        <i class='bx bx-mobile-alt text-6xl text-nutaku-red'></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mobile App</h3>
+                        <p class="text-gray-300 mb-4">Cross-platform mobile application with native performance.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-nutaku-dark/50 rounded-xl overflow-hidden shadow-lg hover:shadow-nutaku-red/30 transition-all border border-nutaku-purple/20">
+                    <div class="h-48 bg-nutaku-purple/10 flex items-center justify-center">
+                        <i class='bx bx-game text-6xl text-nutaku-red'></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Game Development</h3>
+                        <p class="text-gray-300 mb-4">Interactive 2D game with engaging mechanics.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">Unity</span>
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">C#</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-nutaku-dark/50 rounded-xl overflow-hidden shadow-lg hover:shadow-nutaku-red/30 transition-all border border-nutaku-purple/20">
+                    <div class="h-48 bg-nutaku-purple/10 flex items-center justify-center">
+                        <i class='bx bx-data text-6xl text-nutaku-red'></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Data Visualization</h3>
+                        <p class="text-gray-300 mb-4">Interactive dashboards with real-time data.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">D3.js</span>
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="bg-nutaku-dark/50 rounded-xl overflow-hidden shadow-lg hover:shadow-nutaku-red/30 transition-all border border-nutaku-purple/20">
+                    <div class="h-48 bg-nutaku-purple/10 flex items-center justify-center">
+                        <i class='bx bx-cart-alt text-6xl text-nutaku-red'></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-300 mb-4">Full-featured online store with payment integration.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">MERN</span>
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="bg-nutaku-dark/50 rounded-xl overflow-hidden shadow-lg hover:shadow-nutaku-red/30 transition-all border border-nutaku-purple/20">
+                    <div class="h-48 bg-nutaku-purple/10 flex items-center justify-center">
+                        <i class='bx bx-bot text-6xl text-nutaku-red'></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI Chatbot</h3>
+                        <p class="text-gray-300 mb-4">Natural language processing for customer support.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-nutaku-purple/20 text-nutaku-red rounded-full text-sm">NLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Contact Button -->
+    <a href="../src/public/contact.html" class="fixed md:hidden bottom-6 right-6 z-50 bg-nutaku-red text-white p-4 rounded-full shadow-lg hover:bg-nutaku-purple transition-all">
+        <i class='bx bx-envelope text-2xl'></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle - pure JS
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
