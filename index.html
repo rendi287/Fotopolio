@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://cdn.tailwindcss.com">
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYLE Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nutaku: {
+                            red: '#ff2a4f',
+                            dark: '#1a1a2e',
+                            purple: '#6a3093',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-nutaku-dark text-gray-100 min-h-screen">
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 left-0 z-50 bg-nutaku-dark/90 backdrop-blur-sm shadow-md shadow-nutaku-red/30">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent">
+                KYLE
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full text-nutaku-red">
+                    Home
+                </a>
+                <a href="src/public/about.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red">
+                    About
+                </a>
+                <a href="src/public/work.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red">
+                    Work
+                </a>
+                <a href="src/public/contact.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red">
+                    Contact
+                </a>
+            </div>
+            
+            <!-- Mobile Toggle Button -->
+            <button id="nav-toggle" class="md:hidden text-2xl focus:outline-none">
+                <i class='bx bx-menu'></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="nav-menu" class="hidden md:hidden bg-nutaku-dark w-full absolute left-0 top-full shadow-lg">
+            <div class="flex flex-col space-y-2 p-4">
+                <a href="index.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 text-nutaku-red">Home</a>
+                <a href="src/public/about.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">About</a>
+                <a href="src/public/work.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">Work</a>
+                <a href="src/public/contact.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-8 pt-24 md:pt-32 pb-12">
+        <section class="min-h-[calc(100vh-8rem)] flex flex-col md:flex-row items-center justify-center md:justify-between gap-8">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Hi, I'm <span class="bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent">Developer</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-md mx-auto md:mx-0">
+                    Creating immersive experiences with a Nutaku-inspired aesthetic
+                </p>
+                <div class="flex justify-center md:justify-start space-x-6 mb-8">
+                    <a href="https://facebook.com/Randy.kyle09" class="text-2xl hover:text-nutaku-red transition-colors">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/Randy.kyle09" class="text-2xl hover:text-nutaku-red transition-colors">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+                <a href="src/public/contact.html" class="inline-block bg-gradient-to-r from-nutaku-red to-nutaku-purple px-8 py-3 rounded-full font-medium hover:shadow-lg hover:shadow-nutaku-red/30 transition-all">
+                    Contact Me
+                </a>
+            </div>
+            
+            <!-- Optional Graphic -->
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-48 h-48 md:w-64 md:h-64 bg-nutaku-purple/20 rounded-full flex items-center justify-center">
+                    <i class='bx bx-code-alt text-5xl md:text-6xl text-nutaku-red'></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Contact Button -->
+    <a href="src/public/contact.html" class="fixed md:hidden bottom-6 right-6 z-50 bg-nutaku-red text-white p-4 rounded-full shadow-lg hover:bg-nutaku-purple transition-all">
+        <i class='bx bx-envelope text-2xl'></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle - pure JS
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
