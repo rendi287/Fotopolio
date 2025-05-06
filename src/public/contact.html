@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://cdn.tailwindcss.com">
+  </script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact Me | KYLE Portfolio</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          nutaku: {
+            red: '#ff2a4f',
+            dark: '#1a1a2e',
+            purple: '#6a3093',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-nutaku-dark text-gray-100 min-h-screen">
+            <!-- Navbar -->
+<header class="fixed w-full top-0 left-0 z-50 bg-nutaku-dark/90 backdrop-blur-sm shadow-md shadow-nutaku-red/30">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
+    <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent"> KYLE
+</a>
+          <!-- Desktop Menu -->
+<div class="hidden md:flex space-x-8">
+  <a href="../index.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red"> Home
+</a>
+ <a href="../src/public/about.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red"> About
+</a>
+ <a href="work.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-nutaku-red after:transition-all hover:after:w-full hover:text-nutaku-red"> Work
+</a>
+ <a href="contact.html" class="font-medium relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-nutaku-red after:transition-all text-nutaku-red"> Contact
+</a>
+</div>
+           <!-- Mobile Toggle Button -->
+<button id="nav-toggle" class="md:hidden text-2xl focus:outline-none">
+  <i class='bx bx-menu'></i>
+   </button>
+</nav>
+         <!-- Mobile Menu -->
+<div id="nav-menu" class="hidden md:hidden bg-nutaku-dark w-full absolute left-0 top-full shadow-lg">
+  <div class="flex flex-col space-y-2 p-4">
+    <a href="../index.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">Home</a>
+    <a href="about.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">About</a>
+    <a href="work.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">Work</a>
+    <a href="contact.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 text-nutaku-red">Contact</a>
+    </div>
+  </div>
+</header>
+
+          <!-- Main Content -->
+<main class="max-w-6xl mx-auto px-4 sm:px-8 pt-24 md:pt-32 pb-12">
+  <section class="min-h-[calc(100vh-8rem)]">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent"> Get In Touch
+</h1>
+<div class="w-20 h-1 bg-nutaku-red mx-auto mb-6"></div>
+ <p class="text-lg text-gray-300 max-w-2xl mx-auto"> Have a project in mind or want to collaborate? Send me a message!
+  </p>
+</div>
+
+<div class="flex flex-col lg:flex-row gap-12">
+  <div class="lg:w-1/2">
+    <form class="bg-nutaku-dark/50 border border-nutaku-purple/30 rounded-lg p-6 md:p-8 shadow-lg shadow-nutaku-red/10">
+      <div class="mb-6">
+        <label for="name" class="block text-gray-300 mb-2">Your Name</label>
+        <input type="text" id="name" class="w-full px-4 py-3 bg-nutaku-dark/70 border border-nutaku-purple/20 rounded focus:outline-none focus:ring-2 focus:ring-nutaku-red focus:border-transparent" placeholder="Enter your name">
+</div>
+ <div class="mb-6">
+   <label for="email" class="block text-gray-300 mb-2">Email Address</label>
+   <input type="email" id="email" class="w-full px-4 py-3 bg-nutaku-dark/70 border border-nutaku-purple/20 rounded focus:outline-none focus:ring-2 focus:ring-nutaku-red focus:border-transparent" placeholder="Enter your email">
+</div>
+  <div class="mb-6">
+    <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+    <input type="text" id="subject" class="w-full px-4 py-3 bg-nutaku-dark/70 border border-nutaku-purple/20 rounded focus:outline-none focus:ring-2 focus:ring-nutaku-red focus:border-transparent" placeholder="What's this about?">
+</div>
+ <div class="mb-6">
+   <label for="message" class="block text-gray-300 mb-2">Your Message</label>
+   <textarea id="message" rows="5" class="w-full px-4 py-3 bg-nutaku-dark/70 border border-nutaku-purple/20 rounded focus:outline-none focus:ring-2 focus:ring-nutaku-red focus:border-transparent" placeholder="Tell me about your project..."></textarea>
+</div>
+  <button type="submit" class="w-full bg-gradient-to-r from-nutaku-red to-nutaku-purple px-6 py-3 rounded font-medium hover:shadow-lg hover:shadow-nutaku-red/30 transition-all"> Send Message
+  </button>
+ </form>
+</div>
+
+<div class="lg:w-1/2">
+  <div class="bg-nutaku-dark/50 border border-nutaku-purple/30 rounded-lg p-6 md:p-8 shadow-lg shadow-nutaku-red/10 h-full">
+                        <h2 class="text-2xl font-bold mb-6 text-nutaku-red">Contact Information</h2>
+  <div class="space-y-6">
+   <div class="flex items-start space-x-4">
+    <div class="text-nutaku-red text-xl mt-1">
+      <i class='bx bx-envelope'></i>
+ </div>
+<div>
+    <h3 class="font-medium text-gray-300">Email</h3>
+    <button class="text-gray-400">randykyle88@gmail.com</p>
+ </div>
+</div>
+  <div class="flex items-start space-x-4">
+   <div class="text-nutaku-red text-xl mt-1">
+   <i class='bx bx-phone'></i>
+</div>
+<div>
+     <h3 class="font-medium text-gray-300">Phone</h3>
+     <p class="text-gray-400">+6281318304995</p>
+ </div>
+</div>
+    <div class="flex items-start space-x-4">
+    <div class="text-nutaku-red text-xl mt-1">
+      <i class='bx bx-map'></i>
+ </div>
+<div>
+    <h3 class="font-medium text-gray-300">Location</h3>
+    <p class="text-gray-400">Cianjur. Indonesia</p>
+  </div>
+ </div>
+</div>
+   <div class="mt-8">
+     <h3 class="text-xl font-medium mb-4 text-gray-300">Follow Me</h3>
+     <div class="flex space-x-4">
+       <a href="https://facebook.com/Randy.kyle09" class="text-2xl hover:text-nutaku-red transition-colors">
+         <i class='bx bxl-facebook'></i>
+</a>
+       <a href="https://www.instagram.com/Randy.kyle09" class="text-2xl hover:text-nutaku-red transition-colors">
+         <i class='bx bxl-instagram'></i>
+         </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</main>
+
+<script>
+        // Mobile menu toggle - pure JS
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+<script>
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    const mailtoLink = `mailto:randykyle88@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`)}`;
+    window.location.href = mailtoLink;
+  });
+</script>
